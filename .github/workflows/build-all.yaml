@@ -38,7 +38,12 @@ jobs:
 
     - name: Build Docker image for ${{ matrix.service }}
       run: |
+        if [ "${{ matrix.service }}" = "cartservice" ]; then
+            docker build -t ${{ secrets.DOCKER_USERNAME }}/cartservice:latest -f ./src/cartservice/src/Dockerfile ./src/cartservice/src
+        else
         docker build -t ${{ secrets.DOCKER_USERNAME }}/${{ matrix.service }}:latest ./src/${{ matrix.service }}
+        fi
+
 
     - name: Push Docker image for ${{ matrix.service }}
       run: |
