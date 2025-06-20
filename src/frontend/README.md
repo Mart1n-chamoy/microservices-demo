@@ -1,5 +1,6 @@
 # frontend
 
-Run the following command to restore dependencies to `vendor/` directory:
+Ejecute el siguiente comando para restaurar las dependencias en el directorio `vendor/`:
 
     dep ensure --vendor-only
+Actualizado para probar CI/CD
