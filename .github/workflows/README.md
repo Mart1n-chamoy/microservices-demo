@@ -63,3 +63,5 @@ The instance will restart when the script completes in order to finish the Docke
 ```
 sudo ~/actions-runner/svc.sh install ; sudo ~/actions-runner/svc.sh start
 ```
+
+xd
