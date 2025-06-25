@@ -1,6 +1,7 @@
+# k8s/overlays/dev/kustomization.yaml
 resources:
-  - github.com/Mart1n-chamoy/currency-service/k8s/base/deployment.yaml?ref=main
-  - github.com/Mart1n-chamoy/currency-service/k8s/base/service.yaml?ref=main
+  - github.com/Mart1n-chamoy/currency-service/k8s/base?ref=main
+
 
 
 images:
