@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: currencyservice
-          image: mart1n-chamoy/currencyservice:latest
+          image: martin555/currencyservice:latest
           ports:
             - containerPort: 8080
